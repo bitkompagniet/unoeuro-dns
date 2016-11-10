@@ -1,0 +1,29 @@
+{
+  "name": "unoeuro-dns",
+  "version": "0.1.0",
+  "description": "A client library for the Unoeuro DNS API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bitkompagniet/unoeuro-dns.git"
+  },
+  "author": "Kristian Videmark Parkov",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.15.2",
+    "lodash": "^4.16.6",
+    "rumor": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.9.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.5.0"
+  }
+}
