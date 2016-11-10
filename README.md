@@ -54,3 +54,19 @@ api.deleteRecord('mydomain.com', 'RECORD_ID')
 api.clearRecords('mydomain.com', 'A')
 	.then(status => /* array of deletion statuses for A records */ );
 ```
+
+## DNS records
+
+When inserting or editing DNS records, the fields that can be configured are:
+
+```javascript
+const record = {
+	name: '@', // Required. @ = root domain, any other string is a subdomain and * can be used for wildcards
+	type: 'A', // Required. Record type (A, MX, etc.)
+	data: '100.100.100.100', // Required. The IP or data for the record
+	ttl: 600, // Optional. Time-To-Live for the record.
+	priority: 0 // Optional. Record priority. 
+};
+
+api.addRecord('object.com', record);
+```
