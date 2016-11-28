@@ -53,6 +53,9 @@ api.deleteRecord('mydomain.com', 'RECORD_ID')
 
 api.clearRecords('mydomain.com', 'A')
 	.then(status => /* array of deletion statuses for A records */ );
+
+// Buy a domain
+api.buy(domain).then(status => /* status feedback on the purchase */);
 ```
 
 ## DNS records
