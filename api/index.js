@@ -9,6 +9,7 @@ const find = require('./find');
 const addRecord = require('./addRecord');
 const editRecord = require('./editRecord');
 const deleteRecord = require('./deleteRecord');
+const buyOrRedelegateDomain = require('./buyOrRedelegateDomain');
 
 module.exports = function (accountName, apiKey, baseURL) {
 	const client = createClient(accountName, apiKey, baseURL);
@@ -49,6 +50,8 @@ module.exports = function (accountName, apiKey, baseURL) {
 					)
 				)
 			);
+
+	api.buy = (domain) => buyOrRedelegateDomain(client, domain);
 
 	return api;
 };
